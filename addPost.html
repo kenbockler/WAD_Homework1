@@ -22,17 +22,17 @@
 
         <form action="index.html" method="POST">
 
-            <label for="mytextarea">Post body</label>
-            <textarea id="mytextarea" name="message" type="text" required rows="5" cols="20"
-                placeholder="textarea"></textarea>
-            <br>
+            <div class="settings">
+                <label>Post body</label>
+                <textarea id="mytextarea" name="message" type="text" required rows="5" cols="20"
+                    placeholder="textarea"></textarea>
 
-            <label for="files">Select file</label>
-            <input type="file" title=" " id="files" class="hidden" ACCEPT="*" style="color:transparent; width:100px;" />
-            <br>
+                <label>Select file</label>
+                <input type="file" id="files" class="hidden" ACCEPT="*" />
+            </div>
 
             <input type="submit" value="Create post">
-        </form><br>
+        </form>
 
     </section>
 

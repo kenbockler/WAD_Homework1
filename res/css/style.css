@@ -96,8 +96,9 @@ nav a:hover {
 }
 
 .hidden {
-    /* color: transparent; */
+    color: transparent;
     width: auto;
+    max-width: 150px;
     margin: 0;
     margin-bottom: 2vh;
     height: 100%;

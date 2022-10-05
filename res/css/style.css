@@ -223,11 +223,15 @@ label~input {
     height: 100%;
 }
 
+#postcontent {
+    padding: 2vh 1.6vh 2vh 1.6vh;
+}
+
 .postSettings {
     display: grid;
     grid-template-columns: max-content max-content;
     grid-gap: 10px;
-    padding-top: 1vh;
+    padding: 0vh 0 1.6vh 0;
 }
 
 /* Use a Child Selector (e.g., div > p) */

@@ -27,7 +27,7 @@ a {
     width: fit-content;
     height: auto;
 }
-.imgContainer img {
+.imgContainer + img {
     width: 100%;
     height: auto;
 }
@@ -42,53 +42,32 @@ a {
     height: auto;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.header {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    border: 1px solid #646174;
-    background-color: #a2ccea;
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    position: sticky;
-    top: 0;
-    border-radius: 5px;
-}
-
-.nav {
-    margin-top: 5px;
-}
-
-.nav a {
-    padding: 10px 15px;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    color: #34495e;
-    font-size: .99em;
-}
-
-.nav a:hover {
-    background-color: #7ebeb6;
-    color: #092747;
-}
 #homeNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: grey;
+    height: 10vh;
+
+    flex-direction: row;
+    padding: 10px 15px;
+    text-justify: auto;
 }
 
 #homeNavLinks {
     display: flex;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #homeNavLinks a {
     margin: 40px;
+    display: block;
+    vertical-align: middle;
+    color: black;
+}
+
+nav a:hover {
+    background-color: dimgrey;
 }
 
 section {
@@ -131,8 +110,19 @@ section {
     height: 70px;
     margin-bottom: .5em;
 }
-.cardHeader p {
+.cardHeader > p {
     align-self: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 720px;
+    width: 700px;
+    padding: 1em;
+    font-size: 2em;
+    background-color: lightgrey;
 }
 
 .upperBodyCard {
@@ -141,11 +131,7 @@ section {
     justify-content: flex-start;
     height: 720px;
     width: 700px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-radius: 10px;
+    padding: 1em;
     font-size: 2em;
     background-color: lightgrey;
 }
@@ -156,15 +142,10 @@ section {
     justify-content: space-between;
     height: 300px;
     width: 700px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-radius: 10px;
+    padding: 1em;
     font-size: 2em;
     background-color: lightgrey;
     margin-top: .5em;
-
 }
 
 /*.textCard {
@@ -198,13 +179,6 @@ section {
     font-weight: bold;
 }
 
-nav a {
-    display: block;
-    font-size: 1.5em;
-    vertical-align: middle;
-    color: black;
-}
-
 footer {
     width: 100%;
     background-color: lightgrey;
@@ -213,94 +187,12 @@ footer {
 
 }
 
-@media (min-width: 800px) {
-
-    .header,
-    .nav {
-        display: flex;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-}
-
-@media (min-width: 1000px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-
-
-
-
-/* Siin on PostPage grid */
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        ". . ."
-        ". box ."
-        ". . .";
-}
-
-.box {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "top top"
-        "mid mid"
-        "bottom";
-    grid-area: box;
-    background-color: rgb(208, 208, 208);
-    border: 1px solid #959595;
-    border-radius: 25px;
-    justify-items: center;
-}
-
-.mid {
-    grid-area: mid;
-}
-
-.top {
-    grid-area: top;
-}
-
-.bottom {
-    grid-area: bottom;
-}
-
-
-nav {
-    background-color: grey;
-    height: 10vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 15px;
-    text-justify: auto;
-}
-
-
-input {
+label ~ input {
     margin: 0.5vh;
     padding-top: 0.3vh;
     padding-bottom: 0.3vh;
 }
 
-nav a:hover {
-    background-color: dimgrey;
+#post-body {
+    height: 100px;
 }

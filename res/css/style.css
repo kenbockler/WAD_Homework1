@@ -156,10 +156,24 @@ section {
     margin-top: .5em;
 }
 
-/*.textCard {
+@media (max-width: 650px) {
+
+    .upperBodyCard {
+        width: 12em;
+        height: auto;
+    }
+
+    .lowerBodyCard {
+        width: 12em;
+        height: auto;
+    }
+
+}
+
+/* .textCard {
     display: flex;
     flex-grow: 1;
-}*/
+} */
 
 .leftSide {
     display: flex;

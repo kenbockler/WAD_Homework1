@@ -137,7 +137,7 @@ section {
 .pictureBodyCard {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 720px;
     width: 700px;
     padding: 1em;

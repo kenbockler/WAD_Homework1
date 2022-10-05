@@ -24,11 +24,14 @@
 
         <form action="index.html" method="POST">
 
-            <label>Post body</label>
-            <input type="text" id="post-body"><br>
+            <div class="postSettings">
+                <label>Post body</label>
+                <textarea id="mytextarea" name="message" type="text" rows="5" cols="20"
+                    placeholder="textarea"></textarea>
 
-            <label>Select file</label>
-            <input type="file" id="file" ACCEPT="*" /><br>
+                <label>Select file</label>
+                <input type="file" id="files" class="hidden" ACCEPT="*" />
+            </div>
 
             <input type="submit" value="Create post">
         </form>

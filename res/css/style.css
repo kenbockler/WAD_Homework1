@@ -131,9 +131,10 @@ section {
     padding: 1em;
     font-size: 2em;
     background-color: lightgrey;
+    margin-bottom: .5em;
 }
 
-.upperBodyCard {
+.pictureBodyCard {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -144,7 +145,7 @@ section {
     background-color: lightgrey;
 }
 
-.lowerBodyCard {
+.textBodyCard {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -156,14 +157,18 @@ section {
     margin-top: .5em;
 }
 
+.textBodyCard + .pictureBodyCard {
+    margin-top: .5em;
+}
+
 @media (max-width: 650px) {
 
-    .upperBodyCard {
+    .pictureBodyCard {
         width: 12em;
         height: auto;
     }
 
-    .lowerBodyCard {
+    .textBodyCard {
         width: 12em;
         height: auto;
     }

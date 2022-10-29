@@ -1,0 +1,83 @@
+{
+    "Posts": [{
+            "userId": 1,
+            "id": 1,
+            "create_time": "Oct 22, 2022",
+            "title": "",
+            "images": "res/images/tartu2024_2.png",
+            "body": "Tartu 2022"
+        },
+        {
+            "userId": 1,
+            "id": 2,
+            "create_time": "Oct 02, 2022",
+            "title": "",
+            "images": "",
+            "body": "Anyone knows in which room is the lab today?"
+        },
+        {
+            "userId": 1,
+            "id": 3,
+            "create_time": "Oct 01, 2022",
+            "title": "",
+            "images": "",
+            "body": "But why is the rum gone?"
+        },
+        {
+            "userId": 1,
+            "id": 4,
+            "create_time": "Sep 29, 2022",
+            "title": "",
+            "images": "src/images/tallinn.png",
+            "body": "Tallinn 2022"
+        },
+        {
+            "userId": 1,
+            "id": 5,
+            "create_time": "Sep 15, 2022",
+            "title": "",
+            "images": "",
+            "body": "Sep 15, 2022"
+        },
+        {
+            "userId": 1,
+            "id": 6,
+            "create_time": "",
+            "title": "",
+            "images": "",
+            "body": ""
+        },
+        {
+            "userId": 1,
+            "id": 7,
+            "create_time": "",
+            "title": "",
+            "images": "",
+            "body": ""
+        },
+        {
+            "userId": 1,
+            "id": 8,
+            "create_time": "",
+            "title": "",
+            "images": "",
+            "body": ""
+        },
+        {
+            "userId": 1,
+            "id": 9,
+            "create_time": "",
+            "title": "",
+            "images": "",
+            "body": ""
+        },
+        {
+            "userId": 1,
+            "id": 10,
+            "create_time": "",
+            "title": "",
+            "images": "",
+            "body": ""
+        }
+    ]
+}

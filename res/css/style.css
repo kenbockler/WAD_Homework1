@@ -164,13 +164,13 @@ section {
 @media (max-width: 650px) {
 
     .pictureBodyCard {
-        width: 12em;
-        height: auto;
+        max-width: 12em;
+        min-width: 12em;
     }
 
     .textBodyCard {
-        width: 12em;
-        height: auto;
+        max-width: 12em;
+        min-width: 12em;
     }
 
 }

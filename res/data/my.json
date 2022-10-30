@@ -1,83 +1,73 @@
 {
     "Posts": [{
-            "userId": 1,
             "id": 1,
             "create_time": "Oct 22, 2022",
-            "title": "",
             "images": "res/images/tartu2024_2.png",
+            "alt": "Tartu 2024 image",
             "body": "Tartu 2022"
         },
         {
-            "userId": 1,
             "id": 2,
             "create_time": "Oct 02, 2022",
-            "title": "",
             "images": "",
+            "alt": "",
             "body": "Anyone knows in which room is the lab today?"
         },
         {
-            "userId": 1,
             "id": 3,
             "create_time": "Oct 01, 2022",
-            "title": "",
             "images": "",
+            "alt": "",
             "body": "But why is the rum gone?"
         },
         {
-            "userId": 1,
             "id": 4,
             "create_time": "Sep 29, 2022",
-            "title": "",
-            "images": "src/images/tallinn.png",
+            "images": "res/images/tallinn.png",
+            "alt": "Tallinn image",
             "body": "Tallinn 2022"
         },
         {
-            "userId": 1,
             "id": 5,
             "create_time": "Sep 15, 2022",
-            "title": "",
             "images": "",
-            "body": "Sep 15, 2022"
+            "alt": "",
+            "body": "Sometimes lose, but always win"
         },
         {
-            "userId": 1,
             "id": 6,
-            "create_time": "",
-            "title": "",
+            "create_time": "Sep 14, 2022",
             "images": "",
-            "body": ""
+            "alt": "",
+            "body": "Had a beer for lunch today"
         },
         {
-            "userId": 1,
             "id": 7,
-            "create_time": "",
-            "title": "",
+            "create_time": "Sep 13, 2022",
             "images": "",
-            "body": ""
+            "alt": "",
+            "body": "When all else fails, there's always delusion"
         },
         {
-            "userId": 1,
             "id": 8,
-            "create_time": "",
-            "title": "",
+            "create_time": "Sep 10, 2022",
             "images": "",
-            "body": ""
+            "alt": "",
+            "body": "Wake me up when the semester ends"
         },
         {
-            "userId": 1,
             "id": 9,
-            "create_time": "",
-            "title": "",
+            "create_time": "Sep 9, 2022",
             "images": "",
-            "body": ""
+            "alt": "",
+            "body": "Wake me up when september ends"
         },
         {
-            "userId": 1,
             "id": 10,
-            "create_time": "",
-            "title": "",
+            "create_time": "Sep 5, 2022",
             "images": "",
-            "body": ""
+            "alt": "",
+            "body": "Back to school!!"
         }
     ]
 }

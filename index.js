@@ -1,28 +1,37 @@
-fetch('https://myjson.dit.upm.es/api/bins/ggmi')
+fetch('https://myjson.dit.upm.es/api/bins/az66')
     .then((response) => response.json())
     .then(json => {
-        console.log(JSON.stringify(json));
+        json.Posts.forEach(post => {
+            let bodyCardDiv = document.createElement('div');
+            let cardHeaderDiv = createCardHeader(post.create_time);
+            bodyCardDiv.appendChild(cardHeaderDiv);
 
-        // create a new card element div
-        let textBodyCardDiv = document.createElement('div');
-        textBodyCardDiv.className = 'textBodyCard';
+            if (post.images) {
+                bodyCardDiv.className = 'pictureBodyCard';
 
-        // create card header element
-        let cardHeaderDiv = createCardHeader('Oct 22, 2022');
-        textBodyCardDiv.appendChild(cardHeaderDiv);
+                let image = createImageElement('cardImage', post.images, post.alt)
+                let imageText = document.createElement('p')
+                imageText.innerText = post.body;
 
-        // create main text element
-        let textCardDiv = document.createElement('div');
-        textCardDiv.className = 'textCard';
-        let textCardPar = document.createElement('p')
-        textCardPar.innerText = 'Anyone knows in which room is the lab today?'
-        textCardDiv.appendChild(textCardPar);
-        textBodyCardDiv.appendChild(textCardDiv);
+                bodyCardDiv.appendChild(image);
+                bodyCardDiv.appendChild(imageText);
+            }
+            else {
+                bodyCardDiv.className = 'textBodyCard';
 
-        let thumbsUpImg = createImageElement('thumbsUp', 'res/images/thumbs-up-regular.svg', 'Thumbs up image');
-        textBodyCardDiv.appendChild(thumbsUpImg);
+                // create main text element
+                let textCardDiv = document.createElement('div');
+                textCardDiv.className = 'textCard';
+                let textCardPar = document.createElement('p')
+                textCardPar.innerText = post.body;
+                textCardDiv.appendChild(textCardPar);
+                bodyCardDiv.appendChild(textCardDiv);
+            }
 
-        document.getElementsByClassName('mainBody').item(0).appendChild(textBodyCardDiv);
+            let thumbsUpImg = createImageElement('thumbsUp', 'res/images/thumbs-up-regular.svg', 'Thumbs up image');
+            bodyCardDiv.appendChild(thumbsUpImg);
+            document.getElementsByClassName('mainBody').item(0).appendChild(bodyCardDiv);
+        });
     });
 
 function createCardHeader(dateString) {

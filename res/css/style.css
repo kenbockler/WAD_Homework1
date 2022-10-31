@@ -15,7 +15,7 @@ a {
 
 #profile-picture {
     /* height: 100%; */
-    padding: 0px 10px;
+    padding: 0 10px;
     height: 4em;
     margin: auto 0;
 }
@@ -102,7 +102,7 @@ section {
     flex-grow: 2;
 }
 
-.mainBody {
+#mainBody {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -180,17 +180,12 @@ section {
     flex-grow: 1;
 } */
 
-.leftSide {
+.side {
     display: flex;
     flex-grow: 1;
     background-color: lightgrey;
 }
 
-.rightSide {
-    display: flex;
-    flex-grow: 1;
-    background-color: lightgrey;
-}
 
 .footerDiv {
     background-color: lightgrey;
@@ -237,8 +232,7 @@ label~input {
     color: transparent;
     width: auto;
     max-width: 150px;
-    margin: 0;
-    margin-bottom: 2vh;
+    margin: 0 0 2vh;
     height: 100%;
 }
 
@@ -250,7 +244,7 @@ label~input {
     display: grid;
     grid-template-columns: max-content max-content;
     grid-gap: 10px;
-    padding: 0vh 0 1.6vh 0;
+    padding: 0 0 1.6vh 0;
 }
 
 /* Use a Child Selector (e.g., div > p) */
@@ -258,7 +252,22 @@ label~input {
     display: inline-block;
     width: 50px;
     text-align: right;
-    margin-top: auto auto;
+    margin-top: auto;
+}
+
+#dropdownMenu {
+    position: relative;
+    float: right;
+}
+
+#dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: lightgray;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    padding: .5em .5em;
+
 }
 
 

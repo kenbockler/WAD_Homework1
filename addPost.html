@@ -2,41 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/css/style.css">
+    <script type="text/javascript" src="index.js"></script>
     <title>PostIt - Add Post</title>
 </head>
 
 <body>
 
 
-    <nav id="homeNav">
-        <div id="homeNavLinks">
-            <a href="index.html">Home</a>
+<nav id="homeNav">
+    <div id="homeNavLinks">
+        <a href="index.html">Home</a>
+    </div>
+    <img id="profile-picture" src="res/images/me.png" alt="Profile picture">
+</nav>
+
+
+<section id="postcontent">
+
+    <form action="index.html" method="POST">
+
+        <div class="postSettings">
+            <label>Post body</label>
+            <textarea id="mytextarea" name="message" type="text" rows="5" cols="20"
+                      placeholder="textarea"></textarea>
+
+            <label>Select file</label>
+            <input type="file" id="files" class="hidden" ACCEPT="*" />
         </div>
-        <img id="profile-picture" src="res/images/me.png" alt="Profile picture">
-    </nav>
 
+        <input type="submit" value="Create post">
+    </form>
 
-    <section id="postcontent">
-
-        <form action="index.html" method="POST">
-
-            <div class="postSettings">
-                <label>Post body</label>
-                <textarea id="mytextarea" name="message" type="text" rows="5" cols="20"
-                    placeholder="textarea"></textarea>
-
-                <label>Select file</label>
-                <input type="file" id="files" class="hidden" ACCEPT="*" />
-            </div>
-
-            <input type="submit" value="Create post">
-        </form>
-
-    </section>
+</section>
 
 </body>
 
